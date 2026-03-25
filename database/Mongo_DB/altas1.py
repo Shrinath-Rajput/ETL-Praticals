@@ -7,7 +7,7 @@ client = MongoClient(uri)
 try:
     # connection test
     client.admin.command('ping')
-    print("✅ Connected to MongoDB Atlas 🚀")
+    print(" Connected to MongoDB Atlas ")
 
     # database + collection
     db = client["mydb"]
@@ -16,10 +16,10 @@ try:
     # insert data
     collection.insert_one({"name": "Shrinath", "age": 22})
 
-    print("✅ Data Inserted")
+    print(" Data Inserted")
 
 except Exception as e:
-    print("❌ Error:", e)
+    print(" Error:", e)
 
 
 # from pymongo.mongo_client import MongoClient
